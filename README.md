@@ -65,3 +65,8 @@ php artisan db:seed
 - **app/routes/web.php**: Here you will find the routes I created for the app
 - **app/test/Feature**: This directory contains all the test implementations
 
+## Images:
+![App Picture 1](images/1-pic.png)
+![App Picture 2](images/2-pic.png)
+![App Picture 3](images/3-pic.png)
+
