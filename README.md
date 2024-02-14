@@ -39,9 +39,12 @@ DB_PASSWORD=<password>
 ```bash
 php artisan key:generate
 ```  
-7. Ensure Database Existence: Create a MySQL database named 'pizza' with appropriate permissions.
-
-8. Migrate the database and seed it with some data
+7. Ensure Database Existence: Log into MySQL & Create a MySQL database named 'pizza'
+```bash
+mysql -u USERNAME -pPASSWORD
+CREATE DATABASE pizza;
+```
+8. Go to project directory and Migrate the database and seed it with some data
 ```bash
 php artisan migrate --seed
 ```
