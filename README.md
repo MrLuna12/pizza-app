@@ -7,7 +7,24 @@ Welcome to StrongMind Pizza! This is a web application for managing pizza orders
 - **Pizza Management**: Create, update, and delete pizza recipes.
 - **Topping Management**: Create, update, and delete pizza toppings.
 
-## Running Locally
+## Requirements
+
+- For this project, you will need Composer, a dependency manager for php from https://getcomposer.org
+
+1. Download Composer. This will produce 'composer.phar' in the directory where the command was ran
+```bash
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('sha384', 'composer-setup.php') === 'edb40769019ccf227279e3bdd1f5b2e9950eb000c3233ee85148944e555d97be3ea4f40c3c2fe73b22f875385f6a5155') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+```
+
+2. Make Composer globaly to call it anywhere
+```bash
+mv composer.phar /usr/local/bin/composer
+```
+
+## Running Pizza App Locally
 
 1. Clone the repository to your local machine:
 ```bash
@@ -73,6 +90,16 @@ php artisan db:seed
 - **app/resources/views**: Here, you will find my views for the app.
 - **app/routes/web.php**: Here you will find the routes I created for the app
 - **app/test/Feature**: This directory contains all the test implementations
+
+## Uninstalling Composer
+1. Remove the composer file
+```bash
+sudo rm /usr/local/bin/composer
+```
+2. Remove Composer related files
+```bash
+rm -rf ~/.composer
+```
 
 ## Images:
 ![App Picture 1](images/1-pic.png)
