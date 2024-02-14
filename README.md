@@ -11,7 +11,7 @@ Welcome to StrongMind Pizza! This is a web application for managing pizza orders
 
 1. Clone the repository to your local machine:
 ```bash
-git clone https://github.com/MrLuna12/pizza.git
+git clone https://github.com/MrLuna12/pizza-app.git
 ```
 
 2. Navigate to the project directory
@@ -35,15 +35,21 @@ DB_DATABASE=pizza
 DB_USERNAME=<username>
 DB_PASSWORD=<password>
 ```
-6. Migrate the database and seed it with some data
+6. Generate the APP_KEY in the .env file
+```bash
+php artisan key:generate
+```  
+7. Ensure Database Existence: Create a MySQL database named 'pizza' with appropriate permissions.
+
+8. Migrate the database and seed it with some data
 ```bash
 php artisan migrate --seed
 ```
-7. Serve the application:
+9. Serve the application:
 ```bash
 php artisan serve
 ```
-8. Access the application in your web browser:
+10. Access the application in your web browser:
 ```bash
 http://localhost:8000
 ```
