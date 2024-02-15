@@ -36,6 +36,7 @@ Route::get('/toppings/edit/{id}', EditTopping::class);
 Route::get('run-migration', function (){
     Artisan::call('optimize:clear');
     Artisan::call('migrate:fresh --seed');
+
     return "Migration executed successfully";
 });
 
