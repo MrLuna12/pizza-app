@@ -7,11 +7,11 @@
         </a>
 
         <h1>Pizzas</h1>
-
-        {{-- Table Displaying all created pizzas --}}
-        <table class="table table-hover">
-            <caption>List of Pizzas</caption>
-            <thead>
+        <div class="table-responsive">
+            {{-- Table Displaying all created pizzas --}}
+            <table class="table table-hover">
+                <caption>List of Pizzas</caption>
+                <thead>
                 <tr>
                     <th wire:click="sortBy('name')">
                         Name
@@ -28,9 +28,9 @@
                     </th>
                     <th>Actions</th>
                 </tr>
-            </thead>
+                </thead>
 
-            <tbody>
+                <tbody>
                 @foreach($pizzas as $pizza)
                     <tr>
                         {{-- Name Data --}}
@@ -39,7 +39,7 @@
                         {{-- Sauce Data --}}
                         <td>
                             @if($pizza->sauce == 1)
-                               Tomato Sauce
+                                Tomato Sauce
                             @else
                                 No Tomato Sauce
                             @endif
@@ -72,8 +72,10 @@
                         </td>
                     </tr>
                 @endforeach
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
+
         <div>
             {{ $pizzas->links() }}
         </div>
