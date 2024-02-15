@@ -1,6 +1,7 @@
-nav {
+nav.navbar {
     background-color: black;
 }
+
 
 a.nav-link {
     color: white;
@@ -21,7 +22,7 @@ a.nav-link:hover {
 }
 
 img {
-    width: 348px;
+    width: 280px;
 }
 
 #home {
