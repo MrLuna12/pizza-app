@@ -2,12 +2,21 @@
 
 Welcome to StrongMind Pizza! This is a web application for managing pizza orders and toppings.
 
+1. [StrongMind Pizza](#strongmind-pizza)
+2. [Features](#features)
+3. [Installing Composer](#installing-composer)
+4. [Running Pizza App Locally](#running-pizza-app-locally)
+5. [Running Tests](#running-tests)
+6. [File Structure](#file-structure)
+7. [Uninstalling Composer](#uninstalling-composer)
+8. [Images](#images)
+
 ## Features
 
 - **Pizza Management**: Create, update, and delete pizza recipes.
 - **Topping Management**: Create, update, and delete pizza toppings.
 
-## Requirements
+## Installing Composer
 
 - For this project, you will need Composer, a dependency manager for php from https://getcomposer.org
 
