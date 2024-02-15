@@ -5,6 +5,7 @@ use App\Livewire\Pizza\EditPizza;
 use App\Livewire\Pizza\Pizzas;
 use App\Livewire\Topping\EditTopping;
 use App\Livewire\Topping\Toppings;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,5 +33,9 @@ Route::get('/toppings', Toppings::class);
 
 Route::get('/toppings/edit/{id}', EditTopping::class);
 
-
+Route::get('run-migration', function (){
+    Artisan::call('optimize:clear');
+    Artisan::call('migrate:fresh --seed');
+    return "Migration executed successfully";
+});
 
